@@ -227,6 +227,10 @@ ion-icon {
     margin-right: 16px;
 }
 
+.caixa2 > div:nth-child(3) ion-icon:first-child {
+    font-size: 24px;
+} 
+
 .caixa2> :nth-child(2) {
     display: block;
     max-width: 612px;
@@ -404,6 +408,10 @@ span.bold {
         margin-top: 0;
     }
 
+    .caixa2:last-of-type {
+        margin-bottom: 116px
+    }
+
     .conteudo {
         margin-top: 0;
     }
@@ -430,9 +438,9 @@ span.bold {
         box-sizing: border-box;
         padding: 0;
         width: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
         border-top: 1px solid #DBDBDB;
         height: 55px;
         background-color: #FFFFFF;
