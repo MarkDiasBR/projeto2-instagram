@@ -364,18 +364,6 @@ span.bold {
     display: none;
 }
 
-.teste {
-    width: 1001px;
-    height: 50px;
-    margin: 30px auto 0;
-    position: relative;
-    top: 55px;
-}
-
-.joaokleber-mostrar {
-    display: none;
-}
-
 @media (max-width: 934px) {
     .menu-lateral {
         display: none;
@@ -442,7 +430,7 @@ span.bold {
         box-sizing: border-box;
         padding: 0;
         width: 100%;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         right: 0;
         border-top: 1px solid #DBDBDB;
