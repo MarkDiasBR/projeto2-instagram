@@ -444,6 +444,7 @@ span.bold {
         width: 100%;
         position: sticky;
         bottom: 0;
+        right: 0;
         border-top: 1px solid #DBDBDB;
         height: 55px;
         background-color: #FFFFFF;
