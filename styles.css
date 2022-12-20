@@ -442,7 +442,7 @@ span.bold {
         box-sizing: border-box;
         padding: 0;
         width: 100%;
-        position: sticky;
+        position: fixed;
         bottom: 0;
         right: 0;
         border-top: 1px solid #DBDBDB;
