@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FAFAFA;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+}
 
+ion-icon {
+    font-size: 22px;
+    color: #262626;
+}
+
+.tag {
+    cursor: pointer;
+    color: #00376B;
+    font-weight: 400;
+}
 
 video {
     display: block;
@@ -37,13 +54,19 @@ header {
     align-items: center;
 }
 
-.logo ion-icon:last-child {
-    display: none;
+.navbar ion-icon {
+    color: #262626;
+    cursor: pointer;
+    transition: 300ms;
 }
 
-ion-icon {
-    font-size: 22px;
-    color: #000000;
+.navbar ion-icon:hover {
+    color: #8e8e8e;
+    transition: 0ms;
+}
+
+.logo > ion-icon:last-child {
+    display: none;
 }
 
 .divisor-vertical-logo {
@@ -74,6 +97,7 @@ ion-icon {
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     box-sizing: border-box;
+    outline: none;
 }
 
 .icones {
@@ -119,21 +143,21 @@ ion-icon {
     position: relative;
 }
 
-.stories>div {
+.stories div {
     margin: 18px 1px;
     width: 78px;
     height: fit-content;
     position: relative;
 }
 
-.stories>div img:first-of-type {
+.stories div img:first-of-type {
     margin: 0 6px;
     width: 66px;
     height: 66px;
     display: block;
 }
 
-.stories>div img:last-of-type {
+.stories div img:last-of-type {
     margin: 0 auto;
     position: absolute;
     top: 5px;
@@ -141,7 +165,7 @@ ion-icon {
     display: block;
 }
 
-.stories>div p {
+.stories div p {
     margin-top: 5px;
     font-weight: 400;
     font-size: 12px;
@@ -151,17 +175,23 @@ ion-icon {
 }
 
 .stories ion-icon {
+    cursor: pointer;
     position: absolute;
     top: 46px;
     right: 9px;
     z-index: 1;
     color: #FFFFFF;
+    transition: 300ms;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.stories ion-icon:hover {
+    color: #8e8e8e;
+    transition: 0ms;
 }
 
 .caixa2 {
     max-width: 614px;
-    /*max-height: 749px;*/
     display: flex;
     flex-flow: nowrap column;
     box-sizing: border-box;
@@ -169,29 +199,10 @@ ion-icon {
     border-radius: 3px;
     margin-top: 24px;
     margin-bottom: 60px;
+    background-color: #FFFFFF;
 }
 
-.div-ajuste {
-    display: flex;
-    flex-flow: nowrap column;
-    /* height: 76px; */
-}
-
-/* BAGULHO */
-.div-ajuste div:first-child {
-    height: fit-content;
-}
-
-.div-ajuste div:last-child p {
-    margin-top: -5px;
-    margin-bottom: -5px;
-}
-
-
-
-/*BAGULHO*/
-
-.caixa2>div:first-child {
+.caixa2-topo {
     max-width: 100%;
     height: 60px;
     background-color: #FFFFFF;
@@ -202,59 +213,89 @@ ion-icon {
     align-items: center;
 }
 
-.caixa2>div:first-child>div {
+.caixa2-topo-esquerda > a {
     display: flex;
     align-items: center;
-
 }
 
-.caixa2>div:first-child img {
-    width: 32px;
-    height: 32px;
+.caixa2-topo-esquerda > a > img {
     margin: 14px;
 }
 
-.caixa2>div:first-child p {
+.caixa2-topo-esquerda > a > p {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #262626;
+    transition: 300ms;
 }
 
-.caixa2>div:first-child ion-icon {
-    font-size: 16px;
+.caixa2-topo-esquerda > a > p:hover {
+    color: #8e8e8e;
+    transition: 0ms;
+}
+
+.caixa2-topo >  ion-icon {
+    cursor: pointer;
+    font-size: 17px;
     color: #262626;
+    transition: 300ms;
     margin-right: 16px;
 }
 
-.caixa2 > div:nth-child(3) ion-icon:first-child {
-    font-size: 24px;
-} 
-
-.caixa2> :nth-child(2) {
-    display: block;
-    max-width: 612px;
-    max-height: 612px;
-    object-fit: scale-down;
+.caixa2-topo > ion-icon:hover {
+    color: #8e8e8e;
+    transition: 0ms;
 }
 
-.caixa2>div:nth-child(3)>div:first-child {
+.caixa2 > div:nth-child(2) video {
+    width: 100%;
+    object-fit: cover;
+}
+
+.caixa2 > div:nth-child(2) {
+    background-color: black;
+}
+
+.caixa2-likes {
+    display: flex;
+    flex-flow: nowrap column;
+    margin-bottom: 17px;
+}
+
+.caixa2-likes ion-icon {
+    cursor: pointer;
+    color: #262626;
+    transition: 300ms;
+}
+
+.caixa2-likes ion-icon:hover {
+    color: #8e8e8e;
+    transition: 0ms;
+}
+
+.caixa2-likes > div:first-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: fit-content;
 }
 
-.caixa2>div:nth-child(3)>div:first-child>div {
+.caixa2-likes > div:first-child > div {
     margin: 10px 0 10px 15px;
     display: flex;
     align-items: center;
 }
 
-.caixa2>div:nth-child(3)>div:first-child ion-icon {
+.caixa2-likes > div:first-child > div > ion-icon:first-child {
+    font-size: 24px;
+} 
+
+.caixa2-likes > div:first-child ion-icon {
     margin: 0px 14px 0px 0;
 }
 
-.caixa2>div:nth-child(3)>div:nth-child(2) {
+.caixa2-likes > div:last-child {
     padding-left: 16px;
     font-size: 14px;
     font-weight: 300;
@@ -262,12 +303,197 @@ ion-icon {
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-bottom: 14px;
 }
 
+.caixa2-likes > div:last-child p {
+    margin-right: 16px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
 
-span.bold {
+span.bold,
+a:not(.tag) {
     font-weight: 500;
+    color: #262626;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+span.bold:hover,
+a:not(.tag):hover {
+    color: #8e8e8e;
+    transition: 0ms;
+}
+
+span.bold-claro {
+    font-weight: 500;
+    color: #8e8e8e;
+    cursor: pointer;
+}
+
+div.caixa2-comentarios:nth-child(4) {
+    border-top: 1px solid #efefef;
+    padding-top: 12px;
+}
+
+.caixa2-comentarios {
+    display: flex;
+} 
+
+.caixa2-comentarios img {
+    margin: 0 14px 0 14px;
+}
+
+.caixa2-comentarios > div:nth-child(2) { 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;       
+}
+
+.caixa2-comentarios > div:nth-child(2) > ion-icon:last-child {
+    flex-shrink: 0;
+    display: block;
+    margin-top: 3px;
+    width: 49px;
+    font-size: 15px;
+    color: #000000;
+    transition: color 300ms;
+    cursor: pointer;
+}
+
+.caixa2-comentarios > div:nth-child(2) > ion-icon:last-child:hover {
+    transition: 0ms;
+    color: #8e8e8e;
+    cursor: pointer;
+}
+
+.caixa2-comentarios > div:nth-child(2) > div:first-child {    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.caixa2-comentarios > div:nth-child(2) > div:first-child > div:nth-child(2) {    
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+}
+
+.caixa2-comentarios > div:nth-child(2) > div:first-child > div:nth-child(2) ion-icon {
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.caixa2-comentarios.indentada {
+    margin-top: 24px;
+    margin-left: 38px;
+}
+
+.caixa2-comentarios:not(.indentada) {
+    padding-top: 30px;
+}
+
+.caixa2-comentarios.indentada:last-child {
+    margin-bottom: 20px;
+}
+
+.caixa2 .caixa2-comentarios:last-of-type {
+    margin-bottom: 24px;
+}
+
+.caixa2-comentarios > div:nth-child(2) > div:first-child > p {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 300;
+}
+
+.caixa2-comentarios > div:nth-child(2) > div:first-child > div:last-child {
+    font-size: 12px;
+    font-weight: 300;
+    color: #8e8e8e;
+    margin-top: 7px;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.caixa2-comentarios:hover .invisible {
+    opacity: 1;
+    transition: 300ms;
+}
+
+.caixa2 > div:last-child {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #efefef;
+    height: 50px;
+    margin-top: 11px;
+}
+
+.caixa2 > div:last-child ion-icon {
+    width: 60px;
+    font-size: 24px;
+    color: #000000;
+    transition: 300ms;
+}
+
+.caixa2 > div:last-child ion-icon:hover {
+    color: #8E8E8E;
+    transition: 0ms;
+    cursor: pointer;
+}
+
+.caixa2 > div:last-child > form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.caixa2 > div:last-child input[type="text"] {
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 300;
+    background-color: transparent;
+}
+
+.caixa2 > div:last-child input[type="submit"] {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #B2DFFC;
+    transition: color 300ms;
+    padding-right: 14px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.caixa2 > div:last-child input[type="submit"]:hover {
+    color: rgb(0,55,107);
+    transition: 0ms;    
+}
+
+.caixa2 > div:last-child form:valid input[type="submit"] {
+    color: #0095f6;
+    transition: 40ms;
+}
+
+.caixa2 > div:last-child form:valid input[type="submit"]:hover {
+    color: rgb(0,55,107);
+    transition: 0ms;    
+}
+
+.caixa2 > div:last-child input:focus {
+    outline: none;
+}
+
+.caixa2 > div:last-child input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    color: #8b8b8b;
 }
 
 .menu-lateral {
@@ -282,20 +508,17 @@ span.bold {
 
 .menu-lateral>div:first-child * {
     line-height: 19px;
-    font-weight: 300;
-    color: #8E8E8E;
+    font-weight: 0;
     display: inline-block;
-    margin-right: 17px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
+
+
 .menu-lateral>div:first-child {
     margin-bottom: 24px;
-}
-
-.menu-lateral>div:first-child .bold {
-    font-weight: 500;
-    color: #262626;
+    color: #8e8e8e;
 }
 
 .menu-lateral>div:nth-child(2) {
@@ -308,7 +531,14 @@ span.bold {
 
 .menu-lateral>div:nth-child(2) span.flutua {
     color: #262626;
+    transition: 300ms;
+    cursor: pointer;
     float: right;
+}
+
+.menu-lateral>div:nth-child(2) span.flutua:hover {
+    color: #8e8e8e;
+    transition: 0ms;
 }
 
 .menu-lateral>div:nth-child(3) {
@@ -349,6 +579,14 @@ span.bold {
     font-size: 12px;
     line-height: 14px;
     color: #139EF2;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+
+.caixa3 .flutua2:hover {
+    color: #00376B;
+    transition: 0ms;
 }
 
 .menu-lateral>p {
@@ -364,13 +602,40 @@ span.bold {
     align-self: center;
 }
 
+.menu-lateral > p > a {
+    color: #C7C7C7;
+}
+
+.menu-lateral > p > a:hover {
+    color: #C7C7C7;
+    text-decoration: underline;
+}
+
+.menu-lateral > p > a:active {
+    color: #DBDBDB;
+}
+
 .barra-base {
     display: none;
+}
+
+.barra-base ion-icon {
+    cursor: pointer;
+    color: #262626;
+    transition: 300ms;
+}
+
+.barra-base ion-icon:hover {
+    color: #8e8e8e;
+    transition: 0ms;
 }
 
 @media (max-width: 934px) {
     .menu-lateral {
         display: none;
+    }
+    .caixa2-comentarios .invisible {
+        visibility: visible;
     }
 }
 
@@ -382,7 +647,7 @@ span.bold {
         width: 100%;
     }
 
-    .logo ion-icon:last-child {
+    .logo > ion-icon:last-child {
         display: inline;
     }
 
