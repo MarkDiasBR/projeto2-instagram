@@ -97,7 +97,7 @@ header.modo-escuro {
     transition: 300ms;
 }
 
-.navbar ion-icon.modo-escuro {
+.navbar.modo-escuro ion-icon {
     color: #8e8e8e;
     transition: 300ms;
 }
@@ -107,7 +107,7 @@ header.modo-escuro {
     transition: 0ms;
 }
 
-.navbar ion-icon.modo-escuro:hover {
+.navbar.modo-escuro ion-icon:hover {
     color: #FFFFFF;
     transition: 0ms;
 }
@@ -222,7 +222,7 @@ header.modo-escuro {
 
 .stories.modo-escuro {
     background-color: #1d1d1d;
-    border-color: #979797;
+    border-color: #8e8e8e;
 }
 
 .stories div {
@@ -310,6 +310,11 @@ header.modo-escuro {
     background-color: #FFFFFF;
 }
 
+.caixa2.modo-escuro {
+    background-color: #1d1d1d;
+    border-color: #8e8e8e;
+}
+
 .caixa2-topo {
     max-width: 100%;
     height: 60px;
@@ -319,6 +324,11 @@ header.modo-escuro {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.caixa2-topo.modo-escuro {
+    background-color: #1d1d1d;
+    border-bottom-color: #3c4042;
 }
 
 .caixa2-topo-esquerda > a {
@@ -338,9 +348,17 @@ header.modo-escuro {
     transition: 300ms;
 }
 
+.caixa2-topo-esquerda.modo-escuro > a > p {
+    color: #ffffff;
+}
+
 .caixa2-topo-esquerda > a > p:hover {
     color: #8e8e8e;
     transition: 0ms;
+}
+
+.caixa2-topo-esquerda.modo-escuro > a > p:hover {
+    color: #c7c7c7;
 }
 
 .caixa2-topo >  ion-icon {
@@ -351,9 +369,17 @@ header.modo-escuro {
     margin-right: 16px;
 }
 
+.caixa2-topo.modo-escuro >  ion-icon {
+    color: #FFF;
+}
+
 .caixa2-topo > ion-icon:hover {
     color: #8e8e8e;
     transition: 0ms;
+}
+
+.caixa2-topo.modo-escuro > ion-icon:hover {
+    color: #c7c7c7;
 }
 
 .caixa2 > div:nth-child(2) video {
@@ -377,9 +403,17 @@ header.modo-escuro {
     transition: 300ms;
 }
 
+.caixa2-likes.modo-escuro ion-icon {
+    color: #fff;
+}
+
 .caixa2-likes ion-icon:hover {
     color: #8e8e8e;
     transition: 0ms;
+}
+
+.caixa2-likes.modo-escuro ion-icon:hover {
+    color: #8e8e8e;
 }
 
 .caixa2-likes > div:first-child {
@@ -419,6 +453,10 @@ header.modo-escuro {
     margin-bottom: -5px;
 }
 
+.caixa2-likes.modo-escuro > div:last-child p {
+    color: #FFF;
+}
+
 span.bold,
 a:not(.tag) {
     font-weight: 500;
@@ -427,10 +465,20 @@ a:not(.tag) {
     cursor: pointer;
 }
 
+span.bold.modo-escuro,
+a.modo-escuro:not(.tag) {
+    color: #FFF;
+}
+
 span.bold:hover,
 a:not(.tag):hover {
     color: #8e8e8e;
     transition: 0ms;
+}
+
+span.bold.modo-escuro:hover,
+a.modo-escuro:not(.tag):hover {
+    color: #8e8e8e;
 }
 
 span.bold-claro {
@@ -439,9 +487,18 @@ span.bold-claro {
     cursor: pointer;
 }
 
+span.claro.modo-escuro, 
+span.bold-claro.modo-escuro {
+    color: #fff;
+}
+
 div.caixa2-comentarios:nth-child(4) {
     border-top: 1px solid #efefef;
     padding-top: 12px;
+}
+
+div.caixa2-comentarios.modo-escuro:nth-child(4) {
+    border-top-color: #3c4042;
 }
 
 .caixa2-comentarios {
@@ -515,11 +572,36 @@ div.caixa2-comentarios:nth-child(4) {
     font-weight: 300;
 }
 
+.caixa2-comentarios.modo-escuro > div:nth-child(2) > div:first-child > p {
+    color: #FFF;
+}
+
+.caixa2-comentarios.modo-escuro .tag {
+    color: #fff;
+    font-weight: 400;
+}
+
+.caixa2-comentarios.modo-escuro .tag:hover {
+    color: #8e8e8e;
+}
+
 .caixa2-comentarios > div:nth-child(2) > div:first-child > div:last-child {
     font-size: 12px;
     font-weight: 300;
     color: #8e8e8e;
     margin-top: 7px;
+}
+
+.caixa2-comentarios.modo-escuro > div:nth-child(2) > div:first-child > div:last-child ion-icon {
+    color: #FFF;
+}
+
+.caixa2-comentarios.modo-escuro > div:nth-child(2) > ion-icon {
+    color: #fff;
+}
+
+.caixa2-comentarios.modo-escuro > div:nth-child(2) > ion-icon:hover {
+    color: #8e8e8e;
 }
 
 .invisible {
@@ -539,11 +621,19 @@ div.caixa2-comentarios:nth-child(4) {
     margin-top: 11px;
 }
 
+.caixa2.modo-escuro > div:last-child {
+    border-top-color: #3c4042;
+}
+
 .caixa2 > div:last-child ion-icon {
     width: 60px;
     font-size: 24px;
     color: #000000;
     transition: 300ms;
+}
+
+.caixa2.modo-escuro > div:last-child ion-icon {
+    color: #FFFFFF;
 }
 
 .caixa2 > div:last-child ion-icon:hover {
@@ -566,6 +656,14 @@ div.caixa2-comentarios:nth-child(4) {
     line-height: 19px;
     font-weight: 300;
     background-color: transparent;
+}
+
+.caixa2.modo-escuro > div:last-child input[type="text"] {
+    color: #dbdbdb;
+}
+
+.caixa2.modo-escuro > div:last-child input[type="text"]:placeholder {
+    color: #dbdbdb;
 }
 
 .caixa2 > div:last-child input[type="submit"] {
