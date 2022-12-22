@@ -11,28 +11,33 @@
     <title>Instagram</title>
 </head>
 
-<body>
-    <header>
+<body class="modo-claro">
+    <header  class="modo-claro">
         <div class="navbar">
             <div class="logo">
                 <a href="https://www.instagram.com">
-                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon class="modo-claro" name="logo-instagram"></ion-icon>
                 </a>
-                <div class="divisor-vertical-logo"></div>
+                <div class="divisor-vertical-logo modo-claro"></div>
                 <a href="https://www.instagram.com">
-                    <img src="img/logo.png" alt="Instagram logo">
+                    <img class="modo-claro" src="img/logo.png" alt="Instagram logo">
+                    <img class="modo-claro switch modo-escuro" src="img/logo-dark-mode.png" alt="Instagram logo">
                 </a>
                 <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
-            <input type="text" name="input-pesquisar" id="input-pesquisar" placeholder="Pesquisar">
+            <input class="modo-claro" type="text" name="input-pesquisar" id="input-pesquisar" placeholder="Pesquisar">
             <div class="icones">
-                <ion-icon name="paper-plane-outline"></ion-icon>
-                <ion-icon name="compass-outline"></ion-icon>
-                <ion-icon name="heart-outline"></ion-icon>
-                <ion-icon name="person-outline"></ion-icon>
+                <button id="botao-modo-escuro" onclick="alternarModoEscuro()">
+                    <ion-icon class="modo-claro" name="moon-outline"></ion-icon>
+                    <ion-icon class="modo-claro switch modo-escuro" name="moon"></ion-icon>
+                </button>
+                <ion-icon class="modo-claro" name="paper-plane-outline"></ion-icon>
+                <ion-icon class="modo-claro" name="compass-outline"></ion-icon>
+                <ion-icon class="modo-claro" name="heart-outline"></ion-icon>
+                <ion-icon class="modo-claro" name="person-outline"></ion-icon>
             </div>
         </div>
-        <div class="divisor-horizontal"></div>
+        <div class="divisor-horizontal modo-claro"></div>
     </header>
 
 
@@ -40,62 +45,70 @@
     <div class="conteudo">
 
         <div class="stories-e-feed">
-            <div class="stories">
-                <ion-icon name="chevron-forward-circle"></ion-icon>
+            <div class="stories modo-claro">
+                <ion-icon class="modo-claro" name="chevron-forward-circle"></ion-icon>
                 <a href="https://www.instagram.com/stories/9gag">
                     <div class="caixa1">
-                        <img src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro" src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro switch modo-escuro" src="img/stories_background-dark-mode.png">
                         <img src="img/9gag 1.png" alt="">
-                        <p>9gag</p>
+                        <p class="modo-claro">9gag</p>
                     </div>
                 </a>
                 <a href="https://www.instagram.com/stories/meowed">
                     <div class="caixa1">
-                        <img src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro" src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro switch modo-escuro" src="img/stories_background-dark-mode.png">
                         <img src="img/meowed 1.png" alt="meowed">
-                        <p>meowed</p>
+                        <p class="modo-claro">meowed</p>
                     </div>
                 </a>
                 <a href="https://www.instagram.com/stories/barked">
                     <div class="caixa1">
-                        <img src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro" src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro switch modo-escuro" src="img/stories_background-dark-mode.png">
                         <img src="img/barked 1.png" alt="barked">
-                        <p>barked</p>
+                        <p class="modo-claro">barked</p>
                     </div>
                 </a>
                 <a href="https://www.instagram.com/stories/nathanwpylestrangeplanet">
                     <div class="caixa1">
-                        <img src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro" src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro switch modo-escuro" src="img/stories_background-dark-mode.png">
                         <img src="img/nathanwpylestrangeplanet 1.png" alt="nathanwpyle...">
-                        <p>nathanwpyle...</p>
+                        <p class="modo-claro">nathanwpylestrangeplanet</p>
                     </div>
                 </a>
                 <a href="https://www.instagram.com/stories/wawawiwacomics">
                     <div class="caixa1">
-                        <img src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro" src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro switch modo-escuro" src="img/stories_background-dark-mode.png">
                         <img src="img/wawawiwacomicsa 1.png" alt="wawawiwac...">
-                        <p>wawawiwac...</p>
+                        <p class="modo-claro">wawawiwacomics</p>
                     </div>
                 </a>
                 <a href="https://www.instagram.com/stories/respondeai">
                     <div class="caixa1">
-                        <img src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro" src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro switch modo-escuro" src="img/stories_background-dark-mode.png">
                         <img src="img/respondeai 1.png" alt="respondeai">
-                        <p>respondeai</p>
+                        <p class="modo-claro">respondeai</p>
                     </div>
                 </a>
                 <a href="https://www.instagram.com/stories/filomoderna">
                     <div class="caixa1">
-                        <img src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro" src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro switch modo-escuro" src="img/stories_background-dark-mode.png">
                         <img src="img/filomoderna 1.png" alt="filomoderna">
-                        <p>filomoderna</p>
+                        <p class="modo-claro">filomoderna</p>
                     </div>
                 </a>
                 <a href="https://www.instagram.com/stories/memeriagourmet">
                     <div class="caixa1">
-                        <img src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro" src="img/stories_background.jpg" alt="background">
+                        <img class="modo-claro switch modo-escuro" src="img/stories_background-dark-mode.png">
                         <img src="img/memeriagourmet 1.png" alt="memeriagourmet">
-                        <p>memeriagourmet</p>
+                        <p class="modo-claro">memeriagourmet</p>
                     </div>
                 </a>
             </div>
@@ -137,7 +150,7 @@
                                 <p><span class=" bold"><a href="https://www.instagram.com/meowed">meowed</a></span>
                                 </p>                                
                                 <div>
-                                    <p><span class="claro">1 sem &ensp;&nbsp;<span class="bold-claro">249 curtidas</span>&ensp;&nbsp;<span class="bold-claro">Responder&ensp;&nbsp;</span></span></p>
+                                    <p><span class="claro">1 sem &ensp;<span class="bold-claro">249 curtidas</span>&ensp;<span class="bold-claro">&nbsp;Responder&nbsp;&ensp;</span></span></p>
                                     <ion-icon class="invisible" name="ellipsis-horizontal"></ion-icon>
                                 </div>
                             </div>
@@ -173,10 +186,10 @@
                             <ion-icon name="bookmark-outline"></ion-icon>
                         </div>
                         <div>
-                            <a href="https://www.instagram.com/adorableanimals">
+                            <a href="https://www.instagram.com/adorable_animals">
                                 <img src="img/adorableanimals 1.png" style="width: 20px; height: 20px; border-radius:50%">
                             </a>
-                            <p>Curtido por <span class="bold"><a href="https://www.instagram.com/adorableanimalsi">adorableanimals</a></span> e <span class="bold">outras 99.159 pessoas</span></p>
+                            <p>Curtido por <span class="bold"><a href="https://www.instagram.com/adorable_animals">adorable_animals</a></span> e <span class="bold">outras 99.159 pessoas</span></p>
                         </div>
                     </div>
                     <div class="caixa2-comentarios">
@@ -188,7 +201,7 @@
                                 <p><span class=" bold"><a href="https://www.instagram.com/barked">barked</a></span> 🐶
                                 </p>                                
                                 <div>
-                                    <p><span class="claro">1 sem &ensp;&nbsp;<span class="bold-claro">455 curtidas</span>&ensp;&nbsp;<span class="bold-claro">Responder&ensp;&nbsp;</span></span></p>
+                                    <p><span class="claro">1 sem &ensp;<span class="bold-claro">455 curtidas</span>&ensp;<span class="bold-claro">&nbsp;Responder&nbsp;&ensp;</span></span></p>
                                     <ion-icon class="invisible" name="ellipsis-horizontal"></ion-icon>
                                 </div>
                             </div>
@@ -217,7 +230,7 @@
 
 
                     <div>
-                        <video muted>
+                        <video loop muted>
                             <source src="video/video.mp4" type="video/mp4">
                             <source src="video/video.ogv" type="video/ogg">
                     Seu navegador não suporta a tag HTML &quot;&lt;video&gt;&quot;.
@@ -251,7 +264,7 @@
                                 <p><span class=" bold"><a href="https://www.instagram.com/naruto">naruto</a></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem numquam ratione quasi incidunt expedita nulla rem pariatur, culpa perspiciatis maiores veniam? A odit delectus neque iusto! Sed dignissimos ullam a?<br>.<br>.<br>.<br>.<br><span class="tag"><a class="tag" href="https://www.instagram.com/explore/tags/reflitãum/">#reflitãum</a></span>
                                 </p>                                
                                 <div>
-                                    <p><span class="claro">1 sem &ensp;&nbsp;<span class="bold-claro">493 curtidas</span>&ensp;&nbsp;<span class="bold-claro">Responder&ensp;&nbsp;</span></span></p>
+                                    <p><span class="claro">1 sem &ensp;<span class="bold-claro">493 curtidas</span>&ensp;<span class="bold-claro">&nbsp;Responder&nbsp;&ensp;</span></span></p>
                                     <ion-icon class="invisible" name="ellipsis-horizontal"></ion-icon>
                                 </div>
                             </div>
@@ -267,7 +280,7 @@
                                 <p><span class=" bold"><a href="https://www.instagram.com/filiperet">filiperet</a></span> Concordo mano <span class="tag"><a class="tag" href="https://www.instagram.com/explore/tags/VivendoAvançado/">#VivendoAvançado</a> <a class="tag" href="https://www.instagram.com/matue"> @matue</a></span>
                                 </p>                                
                                 <div>
-                                    <p><span class="claro">1 sem &ensp;&nbsp;<span class="bold-claro">132 curtidas</span>&ensp;&nbsp;<span class="bold-claro">Responder&ensp;&nbsp;</span></span></p>
+                                    <p><span class="claro">1 sem &ensp;<span class="bold-claro">132 curtidas</span>&ensp;<span class="bold-claro">&nbsp;Responder&nbsp;&ensp;</span></span></p>
                                     <ion-icon class="invisible" name="ellipsis-horizontal"></ion-icon>
                                 </div>
                             </div>
@@ -283,7 +296,7 @@
                                 <p><span class=" bold"><a href="https://www.instagram.com/matue">matue</a></span> Mlk tá em 2077 🤯 <span class="tag"><a class="tag" href="https://www.instagram.com/explore/tags/ÉSal/">#ÉSal</a></span>
                                 </p>                                
                                 <div>
-                                    <p><span class="claro">1 sem &ensp;&nbsp;<span class="bold-claro">142 curtidas</span>&ensp;&nbsp;<span class="bold-claro">Responder&ensp;&nbsp;</span></span></p>
+                                    <p><span class="claro">1 sem &ensp;<span class="bold-claro">142 curtidas</span>&ensp;<span class="bold-claro">&nbsp;Responder&nbsp;&ensp;</span></span></p>
                                     <ion-icon class="invisible" name="ellipsis-horizontal"></ion-icon>
                                 </div>
                             </div>
@@ -299,7 +312,7 @@
                                 <p><span class=" bold"><a href="https://www.instagram.com/sidokapriv">sidokapriv</a></span> 🤔
                                 </p>
                                 <div>
-                                    <p><span class="claro">1 sem &ensp;&nbsp;<span class="bold-claro">92 curtidas</span>&ensp;&nbsp;<span class="bold-claro">Responder&ensp;&nbsp;</span></span></p>
+                                    <p><span class="claro">1 sem &ensp;<span class="bold-claro">92 curtidas</span>&ensp;<span class="bold-claro">&nbsp;Responder&nbsp;&ensp;</span></span></p>
                                     <ion-icon class="invisible" name="ellipsis-horizontal"></ion-icon>
                                 </div>
                             </div>
@@ -315,7 +328,7 @@
                                 <p><span class=" bold"><a href="https://www.instagram.com/hinata">hinata</a></span> Véi... <span class="tag"><a class="tag" href="https://www.instagram.com/sasuke">@sasuke</a></span>
                                 </p>                                
                                 <div>
-                                    <p><span class="claro">1 sem &ensp;&nbsp;<span class="bold-claro">32 curtidas</span>&ensp;&nbsp;<span class="bold-claro">Responder&ensp;&nbsp;</span></span></p>
+                                    <p><span class="claro">1 sem &ensp;<span class="bold-claro">32 curtidas</span>&ensp;<span class="bold-claro">&nbsp;Responder&nbsp;&ensp;</span></span></p>
                                     <ion-icon class="invisible" name="ellipsis-horizontal"></ion-icon>
                                 </div>
                             </div>
@@ -331,7 +344,7 @@
                                 <p><span class=" bold"><a href="https://www.instagram.com/sasuke">sasuke</a></span> KKKKKKK brabo 🙅‍♂️ <span class="tag"><a class="tag" href="https://www.instagram.com/explore/tags/VAPO/">#VAPO</a></span>
                                 </p>                                
                                 <div>
-                                    <p><span class="claro">1 sem &ensp;&nbsp;<span class="bold-claro">13 curtidas</span>&ensp;&nbsp;<span class="bold-claro">Responder&ensp;&nbsp;</span></span></p>
+                                    <p><span class="claro">1 sem &ensp;<span class="bold-claro">13 curtidas</span>&ensp;<span class="bold-claro">&nbsp;Responder&nbsp;&ensp;</span></span></p>
                                     <ion-icon class="invisible" name="ellipsis-horizontal"></ion-icon>
                                 </div>
                             </div>
@@ -384,8 +397,8 @@
                 </div>
                 <div class="caixa3">
                     <div>
-                        <a href="https://www.instagram.com/adorableanimals"><img src="img/adorableanimals 1.png" alt="adorableanimals"></a>
-                        <p><span class="bold"><a href="https://www.instagram.com/adorableanimals">adorableanimals</a></span><br>Segue você</p>
+                        <a href="https://www.instagram.com/adorable_animals"><img src="img/adorableanimals 1.png" alt="adorable_animals"></a>
+                        <p><span class="bold"><a href="https://www.instagram.com/adorable_animals">adorable_animals</a></span><br>Segue você</p>
                     </div>
                     <p><span class="flutua2">Seguir</span></p>
                 </div>
@@ -444,6 +457,12 @@
         }
         // And you would kick this off where appropriate with:
         playPauseVideo();
+        function alternarModoEscuro() {
+            const boxes = document.querySelectorAll(".modo-claro");
+            for (const box of boxes) {
+                box.classList.toggle("modo-escuro");
+            }
+        }
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
