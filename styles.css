@@ -340,11 +340,13 @@ header.modo-escuro {
     align-items: center;
 }
 
-.caixa2-topo-esquerda > a > img {
+.caixa2-topo-esquerda > a > img,
+.caixa2-topo-esquerda.undertag > div > a > img {
     margin: 14px;
 }
 
-.caixa2-topo-esquerda > a > p {
+.caixa2-topo-esquerda > a > p,
+.caixa2-topo-esquerda.undertag > div > div > p > a {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -352,17 +354,20 @@ header.modo-escuro {
     transition: 300ms;
 }
 
-.caixa2-topo-esquerda.modo-escuro > a > p {
+.caixa2-topo-esquerda.modo-escuro > a > p,
+.caixa2-topo-esquerda.undertag.modo-escuro > div > div > p > a  {
     color: #ffffff;
 }
 
-.caixa2-topo-esquerda > a > p:hover {
+.caixa2-topo-esquerda > a > p:hover,
+.caixa2-topo-esquerda.undertag > div > div > p > a:hover {
     color: #8e8e8e;
     transition: 0ms;
 }
 
-.caixa2-topo-esquerda.modo-escuro > a > p:hover {
-    color: #c7c7c7;
+.caixa2-topo-esquerda.modo-escuro > a > p:hover,
+.caixa2-topo-esquerda.undertag.modo-escuro > div > div > p > a:hover {
+    color: #8e8e8e;
 }
 
 .caixa2-topo >  ion-icon {
@@ -372,6 +377,7 @@ header.modo-escuro {
     transition: 300ms;
     margin-right: 16px;
     margin-left: 16px;
+    flex-shrink: 0;
 }
 
 .caixa2-topo.modo-escuro >  ion-icon {
@@ -385,6 +391,12 @@ header.modo-escuro {
 
 .caixa2-topo.modo-escuro > ion-icon:hover {
     color: #c7c7c7;
+}
+
+.caixa2-topo-esquerda.undertag > div {
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
 }
 
 .caixa2 > div:nth-child(2) video {
